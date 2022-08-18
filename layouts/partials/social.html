@@ -1,5 +1,11 @@
-{{ with .Site.Params.Social.Github }}
-<a href="https://github.com/{{.}}" target="_blank" rel="me noopener noreffer" target="_blank"><i class="iconfont icon-github"></i></a>
+{{ with .Site.Params.Social.Email}}
+<a href="mailto:{{.}}" rel="me noopener noreffer"><i class="iconfont icon-mail" target="_blank"></i></a>
+{{ end }}
+{{ with .Site.Params.Social.Matrix}}
+<a href="https://matrix.to/#/{{.}}" rel="me noopener noreffer" target="_blank"><i class="iconfont icon-matrix"></i></a>
+{{ end }}
+{{ with .Site.Params.Social.Gitlab}}
+<a href="https://gitlab.com/{{.}}" rel="me noopener noreffer" target="_blank"><i class="iconfont icon-gitlab"></i></a>
 {{ end }}
 {{ with .Site.Params.Social.LinkedIn }}
 <a href="https://linkedin.com/in/{{.}}" target="_blank" rel="me noopener noreffer" target="_blank"><i class="iconfont icon-linkedin"></i></a>
@@ -10,9 +16,6 @@
 {{ with .Site.Params.Social.Instagram }}
 <a href="https://www.instagram.com/{{.}}/" target="_blank" rel="me noopener noreffer" target="_blank"><i class="iconfont icon-instagram"></i></a> 
 {{ end }}
-{{ with .Site.Params.Social.Email}}
-<a href="mailto:{{.}}" rel="me noopener noreffer"><i class="iconfont icon-mail" target="_blank"></i></a>
-{{ end }}
 {{ with .Site.Params.Social.Facebook}}
 <a href="https://facebook.com/{{.}}" rel="me noopener noreffer" target="_blank"><i class="iconfont icon-facebook"></i></a>
 {{ end }}
@@ -21,9 +24,6 @@
 {{ end }}
 {{ with .Site.Params.Social.Medium}}
 <a href="https://medium.com/{{.}}" rel="me noopener noreffer" target="_blank"><i class="iconfont icon-medium"></i></a>
-{{ end }}
-{{ with .Site.Params.Social.Gitlab}}
-<a href="https://gitlab.com/{{.}}" rel="me noopener noreffer" target="_blank"><i class="iconfont icon-gitlab"></i></a>
 {{ end }}
 {{ with .Site.Params.Social.Youtubelegacy}}
 <a href="https://www.youtube.com/user/{{.}}" rel="me noopener noreffer" target="_blank"><i class="iconfont icon-youtube"></i></a>
@@ -168,4 +168,7 @@
 {{ end }}
 {{ with .Site.Params.Social.Thingiverse}}
 <a href="https://www.thingiverse.com/{{ . }}" rel="me noopener noreffer" target="_blank"><i class="iconfont icon-t"></i></a>
+{{ end }}
+{{ with .Site.Params.Social.Github }}
+<a href="https://github.com/{{.}}" target="_blank" rel="me noopener noreffer" target="_blank"><i class="iconfont icon-github"></i></a>
 {{ end }}
